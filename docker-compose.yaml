@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  dapp:
+    build: .
+    image: dapp:latest
+    working_dir: /code
+    volumes:
+      - '.:/code'
+    command: ash
